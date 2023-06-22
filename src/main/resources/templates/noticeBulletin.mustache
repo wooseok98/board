@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bulletin.css">
+    <title>noticeBulletin</title>
+</head>
+<body>
+    <h1>공지사항</h1>
+    <div class="box">
+
+        <div class="titleTitle">제목</div>
+        <div class="title">{{article.title}}</div> <!-- 제목 들어갈 곳 -->
+        <div class="contentTitle">제목</div>
+        <div class="content">{{article.content}}</div> <!-- 내용 들어갈 곳 -->
+        <div class="btn">
+            <button type="button" class="edit" 
+                onclick="location.href='/editn/{{article.id}}' ">수정</button>
+            <button type="button" class="delete" 
+                onclick="location.href='/deleten/{{article.id}}' ">삭제</button>
+
+
+        </div>
+
+    </div>
+    <a href="/main">홈으로</a>
+</body>
+</html>

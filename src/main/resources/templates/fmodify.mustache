@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="modify.css">
+    <title>modify</title>
+</head>
+<body>
+    <h1>수정하기</h1>
+    <div class="writeBox">
+        <form action="/updatef" method="post">
+            <input name="id"  type="hidden" value="{{article.id}}"/>
+            <div class="title">제목</div>
+            <textarea cols="40" rows="1" name="title">{{article.title}}</textarea>
+            <div class="content">내용</div>
+            <textarea cols="40" rows="10" name="content">{{article.content}}</textarea>
+            <button>저장하기</button>
+
+            <a href="/createf/{{id}}">Back</a>
+        </form>
+    </div>
+</body>
+</html>

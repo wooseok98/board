@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+}
+textarea{
+    display: block;
+    margin:auto auto auto auto;
+}
+button{
+    margin:20px auto 10px 288px;
+}
+.writeBox{
+    border: 1px solid black;
+    width:400px;
+    margin:0 auto;
+}
+.writeBox .title,
+.writeBox .content{
+    margin:1% auto auto 44px;
+}

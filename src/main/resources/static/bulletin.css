@@ -1,0 +1,34 @@
+h1{
+    text-align: center;
+}
+.box{
+    border: 1px solid black;
+    width:800px;
+    margin:0 auto;
+}
+.box .title{
+    margin:5px auto auto 5%;
+    width:90%;
+    height:30px;
+    border:1px solid black;
+}
+.box .content{
+    margin:5px auto auto 5%;
+    width:90%;
+    height:150px;
+    border:1px solid black;
+}
+.box .titleTitle,
+.box .contentTitle{
+    margin:1% auto auto 44px;
+}
+.box .btn{
+    margin:20px auto 10px 630px;
+    text-align: center;
+}
+.box .btn .edit{
+    display:inline-block;
+}
+.box .btn .delete{
+    display:inline-block;
+}

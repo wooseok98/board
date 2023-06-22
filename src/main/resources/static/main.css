@@ -1,0 +1,112 @@
+*{
+    margin:0;
+}
+
+
+/* 제목 설정 */
+.title{
+    background-color: aqua;
+    height: 100px;
+    position:relative;
+}
+.title .image{
+    width:100%;
+    height:100%;
+}
+.title img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.title .NL{
+    position: absolute;
+    top:40%;
+    left:50%;
+    width:100%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    color:black;
+    text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white;
+    font-size:400%; 
+}
+
+/* 달력 설정 */
+.calendar{
+    display: inline-block;
+    /* background-color: rgb(68, 172, 120); */
+    width: 40%;
+    height: 700px;
+    float:left;
+}
+.calendar .calendarTable{
+    width: 100%;
+    border-top: 1px solid #444444;
+    border-left: 1px solid #444444;
+    border-right: 1px solid #444444;
+    border-collapse: collapse;
+}
+.sun,.dateSun{
+    color:red;
+}
+.sat, .dateSat{
+    color:blue;
+}
+
+
+/* 게시판 설정 */
+.board {
+    display: inline-block;
+    /* background-color: rgb(87, 227, 87); */
+    width:55%;
+    height: 700px;
+    float:left;
+}
+.board .notice{
+    /*background-color: yellow;*/
+    margin:auto 5% 50px 5%;
+}
+.board .notice .noticeTitle{
+    font-size: x-large;
+}
+.board .notice .write{
+    text-align: right;
+    margin: 4px 10px 4px auto;
+}
+.board .free{
+    /*background-color: red;*/
+    margin:auto 5% 50px 5%;
+}
+.board .free .freeTitle{
+    font-size: x-large;
+}
+.board .free .write{
+    text-align: right;
+    margin: 4px 10px 4px auto;
+}
+ 
+
+/* 달력 날짜 설정 */
+button{
+    width:20px;
+    border: none;
+    background-color: white;
+}
+/* 게시판 표 설정 */
+table {
+    width: 95%;
+    border-top: 1px solid #444444;
+    border-collapse: collapse;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    table-layout : fixed;
+
+}
+th, td {
+    border-bottom: 1px solid #444444;
+    padding: 10px;
+    font-size: 90%;
+    text-align:center;
+}
+td {
+    text-align: center;
+}

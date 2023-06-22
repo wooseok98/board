@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bulletin.css">
+    <title>freeBulletin</title>
+</head>
+
+<body>
+    <h1>자유게시판</h1>
+    <div class="box">
+        <div class="titleTitle">제목</div>
+        <div class="title">{{article.title}}</div> <!-- 제목 들어갈 곳 -->
+        <div class="contentTitle">내용</div>
+        <div class="content">{{article.content}}</div> <!-- 내용 들어갈 곳 -->
+        <div class="btn">
+            <button type="button" class="edit" 
+                onclick="location.href='/editf/{{article.id}}' ">수정</button>
+            <button type="button" class="delete" 
+                onclick="location.href='/deletef/{{article.id}}'" >삭제</button>
+
+
+        </div>
+    </div>
+    <a href="/main">홈으로</a>
+
+</body>
+</html>
